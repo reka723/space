@@ -1,5 +1,4 @@
 import "./MainNavigation.css";
-import logo from "../Assets/logo.svg";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
 const MainNavigation = () => {
@@ -7,7 +6,7 @@ const MainNavigation = () => {
   var activeNumber = 0;
   return (
     <header className="header">
-      <img className="logo" alt="logo" src={logo} />
+      <img className="logo" alt="logo" src="/assets/shared/logo.svg" />
       <nav className="nav">
         <ul className="nav-list">
           <li>
@@ -33,16 +32,28 @@ const MainNavigation = () => {
           </li>
 
           <li>
-            <div className="nav-element">
-              <p>02</p>
-              <p>Crew</p>
-            </div>
+            <NavLink
+              to="/crew/douglashurley"
+              className={location.pathname.includes(`/crew/`) ? "active" : ""}
+            >
+              <div className="nav-element">
+                <p>02</p>
+                <p>Crew</p>
+              </div>
+            </NavLink>
           </li>
           <li>
-            <div className="nav-element">
-              <p>03</p>
-              <p>Technology</p>
-            </div>
+            <NavLink
+              to="/technology/launchvehicle"
+              className={
+                location.pathname.includes(`/technology/`) ? "active" : ""
+              }
+            >
+              <div className="nav-element">
+                <p>03</p>
+                <p>Technology</p>
+              </div>
+            </NavLink>
           </li>
         </ul>
       </nav>

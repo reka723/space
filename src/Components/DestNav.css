@@ -1,21 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;700&display=swap');
 .dest-list {
   list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 40px;
   padding: 0;
   height: 40px;
   padding-bottom: 3px;
 }
 .planet {
   height: 100%;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  color: #D0D6F9;
+  
 }
 .active > .planet {
-  color: wheat;
-  border-bottom: 3px solid wheat;
+  color: white;
+  border-bottom: 3px solid white;
 }
 .planet:hover {
-  border-bottom: 3px solid #979797;
+  border-bottom: 3px solid #d0d6f953;
 }

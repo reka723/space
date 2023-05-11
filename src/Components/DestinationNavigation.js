@@ -6,7 +6,6 @@ const DestinationNavigation = () => {
   const location = useLocation();
   const navi = data.destinations.map((destination) => {
     const name = destination.name.toLowerCase();
-    console.log(location);
     return (
       <li key={destination.name}>
         <NavLink relative="path" to={`/destination/${name}`}>

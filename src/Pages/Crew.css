@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+.crew-page{
+    position: absolute;
+    color: white;
+    top:0;
+    background: url(../../public/assets/crew/background-crew-desktop.jpg) center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.c-page-title{
+    margin-top: 160px;
+    float: left;
+    margin-left: 190px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 100px;
+    letter-spacing: 4px;
+}
+.c-page-title>:first-child{
+    font-family: 'Barlow Condensed', sans-serif;
+    opacity: 0.25;
+}
+.c-page-title>:last-child{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.c-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+    animation: container 1s;
+    margin-left: 190px;
+
+}
+
+.c-container-left>h2{
+    font-family: 'Bellefair', serif;
+    opacity: 0.5;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.c-container-left>h1{
+    text-transform: uppercase;
+    font-family: 'Bellefair', serif;
+    font-size: 56px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.c-container-left>p{
+    line-height: 32px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    color: #D0D6F9;
+    margin-bottom: 50px;
+    max-width: 500px;
+    height: 200px;
+
+}
+.c-container-right>img{
+    position: absolute;
+    bottom: 0px
+}
