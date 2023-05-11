@@ -1,8 +1,9 @@
 import "./MainNavigation.css";
 import logo from "../Assets/logo.svg";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const MainNavigation = () => {
+  const location = useLocation();
   var activeNumber = 0;
   return (
     <header className="header">
@@ -18,7 +19,12 @@ const MainNavigation = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/destination/moon">
+            <NavLink
+              to="/destination/moon"
+              className={
+                location.pathname.includes(`/destination/`) ? "active" : ""
+              }
+            >
               <div className="nav-element">
                 <p>01</p>
                 <p>Destination</p>

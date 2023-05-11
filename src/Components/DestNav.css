@@ -1,8 +1,21 @@
-.dest-list{
-
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
+.dest-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 0;
+  height: 40px;
+  padding-bottom: 3px;
+}
+.planet {
+  height: 100%;
+}
+.active > .planet {
+  color: wheat;
+  border-bottom: 3px solid wheat;
+}
+.planet:hover {
+  border-bottom: 3px solid #979797;
 }
