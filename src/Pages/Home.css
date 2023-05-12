@@ -1,13 +1,61 @@
 .home-page{
     position: absolute;
     top:0;
-
     background: url(../../public/assets/home/background-home-desktop.jpg) center no-repeat;
     background-size: cover;
     z-index: -1;
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    color: white;
+}
+.home-container{
+    width: 500px;
+    margin-top: 400px;
+    margin-left: 190px;
+}
+.home-container>h2{
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 4.5px;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.home-container>h1{
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 150px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.home-container>p{
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+    font-size: 20px;
+    line-height: 32px;
+}
+.home-button{
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    position: absolute;
+    bottom:160px;
+    right: 160px;
+
+    background: white;
+    color: black;
+    text-align: center;
+    line-height: 270px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.home-button:hover{
+    outline: 40px solid #ffffff1f;
 }

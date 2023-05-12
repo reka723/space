@@ -1,0 +1,12 @@
+.crew-nav{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.c-active>div{
+    background-color: white;
+}
+.crew-nav:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}

@@ -66,6 +66,7 @@
     line-height: 32px;
     color: #D0D6F9;
     padding-bottom: 50px;
+    height: 150px;
 }
 .d-container-right{
     display: flex;
